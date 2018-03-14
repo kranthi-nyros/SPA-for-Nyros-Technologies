@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>nyros.com</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <!--MDL--> 
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+      <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <!--MDL-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js'></script>
+   </head>
+   <body>
+      <!-- Always shows a header, even in smaller screens. -->
+      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+         <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+               <!-- Title -->
+               <span class="mdl-layout-title" style="margin-right:-70px;">
+                  <div class="wrapper">
+                     <div class="cube">
+                        <b class="front"></b>
+                        <b class="back"></b>
+                        <b class="top"></b>
+                        <b class="bottom"></b>
+                        <b class="left"></b>
+                        <b class="right"></b>
+                        <p class="front"></p>
+                        <p class="back"></p>
+                        <p class="top"></p>
+                        <p class="bottom"></p>
+                        <p class="left"></p>
+                        <p class="right"></p>
+                     </div>
+                  </div>
+               </span>
+               <!-- Add spacer, to align navigation to the right -->
+               <div class="mdl-layout-spacer"></div>
+               <!-- Navigation. We hide it in small screens. -->
+               <nav class="mdl-navigation mdl-layout--large-screen-only">
+                  <a class="mdl-navigation__link" href="">COMPANY OVERVIEW</a>
+                  <a class="mdl-navigation__link" href="#W">WHAT WE DO</a>
+                  <a class="mdl-navigation__link" href="">HOW WE DO</a>
+                  <a class="mdl-navigation__link" href="">WHO WE ARE</a>
+                  <a class="mdl-navigation__link" href="">JOIN OUR TEAM</a>
+                  <a class="mdl-navigation__link" href="">CONTACT</a>
+               </nav>
+            </div>
+         </header>
+         <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">NYROS</span>
+            <nav class="mdl-navigation">
+               <a class="mdl-navigation__link" href="">Link</a>
+               <a class="mdl-navigation__link" href="">Link</a>
+               <a class="mdl-navigation__link" href="">Link</a>
+               <a class="mdl-navigation__link" href="">Link</a>
+            </nav>
+         </div>
+         <main class="mdl-layout__content">
+            <div class="page-content">
+               <!--heder-->
+               <div class="container-fluid">
+                  <div class="cl-md-12 headerbg">
+                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                           <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                           <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                           <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" >
+                           <div class="item active">
+                              <img src="assets/banner1.jpg" alt="...">
+                              <div class="carousel-caption">
+                                 <h2>Nyros’s mission is to help brands build
+                                    <br> on web and reach the digital world.
+                                 </h2>
+                              </div>
+                           </div>
+                           <div class="item">
+                              <img src="assets/banner2.jpg" alt="...">
+                              <div class="carousel-caption">
+                                 <h2>Nyros was founded in 2006, and we’ve worked with great clients around the world creating brilliant and purposeful products.</h2>
+                              </div>
+                           </div>
+                           <div class="item">
+                              <img src="assets/banner1.jpg" alt="...">
+                              <div class="carousel-caption">
+                                 <h2>Heading</h2>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right">   
+                        </span>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <!--heder end-->
+               <div class="cl-md-12 whatwedo">
+                  <div class="cl-md-2" style="margin-left:25%;" >
+                     <hr style="width:80%;">
+                     <hr style="width: 50%;margin-left:10%;">
+                  </div>
+                  <h2 class="main"> What We Do </h2>
+                  <div class="divider"><img src="assets/divider.png"></div>
+                  <div class="cl-md-10 tab" style="display: inline-flex;">
+                     <div class="cl-md-4">
+                        <div class="cl-md-1 loto" 
+                           onclick="openCity(event, 'London')">
+                           <i class="material-icons naruto">lightbulb_outline</i>
+                        </div>
+                        <h4 class="narutotext" style="margin-left: -20px;">Digital strategy</h4>
+                        <div class="cl-md-1 loto" onclick="openCity(event, 'Paris')" >
+                           <i class="material-icons naruto">brush</i>
+                        </div>
+                        <h4 class="narutotext">Design <br> & <br>User Experience</h4>
+                        <div class="cl-md-1 loto" onclick="openCity(event, 'Tokyo')">
+                           <i class="material-icons naruto">art_track</i>
+                        </div>
+                        <h4 class="narutotext" style="margin-left:-20px;">Website/Web<br>Apps Engineering</h4>
+                     </div>
+                     <div class="cl-md-2 tabbs" style="margin-top: 100px;">
+                        <div id="London" class="tabcontent">
+                           <img src="assets/features.png">
+                        </div>
+                        <div id="Paris" class="tabcontent">
+                           <img src="https://png.pngtree.com/element_pic/16/11/26/83e29458e2f597642946057ec87206a4.jpg">
+                        </div>
+                        <div id="Tokyo" class="tabcontent">
+                           <h3>Tokyo</h3>
+                           <p1>Tokyo is the capital of Japan.</p1>
+                        </div>
+                     </div>
+                     <div class="cl-md-4">
+                        <div class="cl-md-1 loto">
+                           <i class="material-icons naruto">settings_cell</i>
+                        </div>
+                        <h4 class="narutotext">Mobile Apps</h4>
+                        <div class="cl-md-1 loto">
+                           <i class="material-icons naruto">lightbulb_outline</i>
+                        </div>
+                        <h4 class="narutotext" style="margin-bottom:78px;">Expert Training</h4>
+                        <div class="cl-md-1 loto">
+                           <i class="material-icons naruto">supervisor_account</i>
+                        </div>
+                        <h4 class="narutotext">Digital strategy</h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="" style="margin-left:25%;">
+                  <hr style="width:80%;">
+                  <hr style="width: 50%;margin-left:10%;">
+               </div>
+               <h2 class="main">How We Do</h2>
+               <div class="divider"><img src="assets/divider.png"></div>
+               <div class="col-md-12 dodo" style="display: inline-flex;">
+                  <div class="col-md-2"> </div>
+                  <div class="col-md-4 card card-1">
+                     <img src="assets/listen.jpg" class="lisimg">
+                     <div class="LISTEN">
+                        <h4>LISTEN</h4>
+                        <h6>Understand the project,<br> audience, and objectives to <br>formulate a digital strategy.</h6>
+                     </div>
+                  </div>
+                  <div class="col-md-4 card card-1">
+                     <img src="assets/wireframes.png" class="lisimg">
+                     <div class="LISTEN">
+                        <h4>WIREFRAME</h4>
+                        <h6>Wireframe the design to reflect the objectives and demo the direction for the entire project.</h6>
+                     </div>
+                  </div>
+                  <div class="col-md-4 card card-1">
+                     <img src="assets/Plan.png" class="lisimg">
+                     <div class="LISTEN">
+                        <h4>PLAN</h4>
+                        <h6>Prepare Work Breakdown, Time/Cost Estimates for the development and deployment.</h6>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-12 dodo" style="display: inline-flex;margin-top: 20px; margin-bottom: 50px;">
+                  <div class="col-md-2"> </div>
+                  <div class="col-md-4 card card-1">
+                     <img src="assets/design.jpg" class="lisimg">
+                     <div class="LISTEN">
+                        <h4>DESIGN</h4>
+                        <h6>Prepare Work Breakdown, Time/Cost Estimates for the development and deployment.</h6>
+                     </div>
+                  </div>
+                  <div class="col-md-4 card card-1">
+                     <img src="assets/develop.png" class="lisimg">
+                     <div class="LISTEN">
+                        <h4>DEVELOP</h4>
+                        <h6>Prepare Work Breakdown, Time/Cost Estimates for the development and deployment.</h6>
+                     </div>
+                  </div>
+                  <div class="col-md-4 card card-1">
+                     <img src="assets/delivery.png" class="lisimg">
+                     <div class="LISTEN">
+                        <h4>DELIVER</h4>
+                        <h6>Prepare Work Breakdown, Time/Cost Estimates for the development and deployment.</h6>
+                     </div>
+                  </div>
+               </div>
+               <div class="" style="margin-left:25%;">
+                  <hr style="width:80%;">
+                  <hr style="width: 50%;margin-left:10%;">
+               </div>
+               <h2 class="main">Who We Are</h2>
+               <div class="divider"><img src="assets/divider.png"></div>
+               <p1 class="Nyrosians">We're Nyrosians. A team of 40 passionate designers, developers, testers, project managers,<br> human resource managers - who are thinkers, makers,<br> creators, and still love the lazy pandas. </p1>
+               <div>
+                  <a href="http://www.developers-blog.com/">
+                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent blog">
+                  blog for more stories 
+                  </button>
+                  </a>
+               </div>
+               <div class="col-md-12" 
+                  style="background-color: transparent; margin-top:60px;">
+                  <div id="Carousel" class="carousel slide">
+                     <ol class="carousel-indicators lolo">
+                        <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#Carousel" data-slide-to="1"></li>
+                        <li data-target="#Carousel" data-slide-to="2"></li>
+                     </ol>
+                     <!-- Carousel items -->
+                     <div class="carousel-inner">
+                        <div class="item active">
+                           <div class="row" style="margin-left: 200px;">
+                              <div class="col-md-3" style="margin-top:50px;">
+                                 <a href="#" class="thumbnail">
+                                 <img src="assets/emplyes/team-3.jpg" alt="Image" style="max-width:100%;"></a>
+                              </div>
+                              <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/emplyes/team-4.jpg" alt="Image" style="max-width:100%;"></a></div>
+                              <div class="col-md-3" style="margin-top:-50px;">
+                                 <a href="#" class="thumbnail"><img src="assets/emplyes/team-24.jpg" alt="Image" 
+                                    style="max-width:100%;"></a>
+                              </div>
+                           </div>
+                           <!--.row-->
+                        </div>
+                        <!--.item-->
+                        <div class="item">
+                           <div class="row" style="margin-left: 200px;">
+                              <div class="col-md-3" style="margin-top:50px;">
+                                 <a href="#" class="thumbnail"><img src="assets/emplyes/team-21.jpg" alt="Image" style="max-width:100%;"></a>
+                              </div>
+                              <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/emplyes/team-6.jpg" alt="Image" style="max-width:100%;"></a></div>
+                              <div class="col-md-3" style="margin-top:-50px;"><a href="#" class="thumbnail">
+                                 <img src="assets/emplyes/team-1.jpg" alt="Image" style="max-width:100%;"></a>
+                              </div>
+                           </div>
+                           <!--.row-->
+                        </div>
+                        <!--.item-->
+                        <div class="item">
+                           <div class="row" style="margin-left: 200px;">
+                              <div class="col-md-3" style="margin-top:50px;"><a href="#" class="thumbnail"><img src="assets/emplyes/team-31.jpg" alt="Image" 
+                                 style="max-width:100%;"></a></div>
+                              <div class="col-md-3"><a href="#" class="thumbnail"><img src="assets/emplyes/team-9.jpg" alt="Image" style="max-width:100%;"></a></div>
+                              <div class="col-md-3" style="margin-top:-50px;">
+                                 <a href="#" class="thumbnail"><img src="assets/emplyes/team-2.jpg" alt="Image" style="max-width:100%;"></a>
+                              </div>
+                           </div>
+                           <!--.row-->
+                        </div>
+                        <!--.item-->
+                     </div>
+                     <!--.carousel-inner-->
+                     <a data-slide="prev" href="#Carousel">‹</a>
+                     <a data-slide="next" href="#Carousel">›</a>
+                  </div>
+                  <!--.Carousel-->
+               </div>
+               <div class="" style="margin-left:25%;">
+                  <hr style="width:80%;">
+                  <hr style="width: 50%;margin-left:10%;">
+               </div>
+               <h2 class="main">What People Say</h2>
+               <div class="divider">
+                  <img src="assets/divider.png">
+               </div>
+               <div class="col-md-12" style="margin-top: -50px;">
+                  <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                     <!-- Carousel Slides / Quotes -->
+                     <div class="carousel-inner text-center">
+                        <!-- Quote 1 -->
+                        <div class="item active">
+                           <blockquote>
+                              <div class="row">
+                                 <div class="col-sm-8 col-sm-offset-2">
+                                    <p1>“This project has been a moving target due my client’s demands. TOPS, has been flexible and consistent on their delivery of an excellent solution. Thanks!”</p1>
+                                    <small>Someone famous</small>
+                                 </div>
+                              </div>
+                           </blockquote>
+                        </div>
+                        <!-- Quote 2 -->
+                        <div class="item">
+                           <blockquote>
+                              <div class="row">
+                                 <div class="col-sm-8 col-sm-offset-2">
+                                    <p1>“This project has been a moving target due my client’s demands. TOPS, has been flexible and consistent on their delivery of an excellent solution. Thanks!”</p1>
+                                    <small>Someone famous</small>
+                                 </div>
+                              </div>
+                           </blockquote>
+                        </div>
+                        <!-- Quote 3 -->
+                        <div class="item">
+                           <blockquote>
+                              <div class="row">
+                                 <div class="col-sm-8 col-sm-offset-2">
+                                    <p1>“This project has been a moving target due my client’s demands. TOPS, has been flexible and consistent on their delivery of an excellent solution. Thanks!”</p1>
+                                    <small>Someone famous</small>
+                                 </div>
+                              </div>
+                           </blockquote>
+                        </div>
+                     </div>
+                     <!-- Bottom Carousel Indicators -->
+                     <ol class="carousel-indicators">
+                        <li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="assets/review-five.png" alt="">
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="assets/review-one.png" alt="">
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="assets/review-four.png" alt="">
+                        </li>
+                     </ol>
+                     <!-- Carousel Buttons Next/Prev -->
+                     <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                     <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                  </div>
+               </div>
+               <div class="" style="margin-left:25%;">
+                  <hr style="width:80%;">
+                  <hr style="width: 50%;margin-left:10%;">
+               </div>
+               <div class="row">
+                  <h2 class="main">Our Clients</h2>
+                  <div class="divider">
+                     <img src="assets/divider.png">
+                  </div>
+                  <div class="col-md-12" style="display: inline-flex;">
+                     <div class="col-md-3 client">
+                        <img src="assets/clients/cl-1.jpg">
+                     </div>
+                     <div class="col-md-3 client">
+                        <img src="assets/clients/cl-2.jpg">
+                     </div>
+                     <div class="col-md-3 client">
+                        <img src="assets/clients/cl-3.jpg">
+                     </div>
+                     <div class="col-md-3 client">
+                        <img src="assets/clients/cl-4.jpg">
+                     </div>
+                  </div>
+               </div>
+               <div class="" style="margin-left:25%;">
+                  <hr style="width:80%;">
+                  <hr style="width: 50%;margin-left:10%;">
+               </div>
+               <div class="col-md-12" style="display:inline-flex;margin-bottom: 50px;">
+                  <div class="col-md-4"> </div>
+                  <div class="col-md-4 apply">
+                     <div class="apllysmall">
+                        <i class="material-icons touch">touch_app</i>
+                     </div>
+                     <h2>APPLY TODAY</h2>
+                     <div class="divider">
+                        <img src="assets/divider.png">
+                     </div>
+                     <P1>Looking for Training from Nyrosians?</P1>
+                     <!-- Accent-colored raised button with ripple -->
+                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent Click">
+                     Click here
+                     </button>
+                  </div>
+                  <div class="col-md-4 apply2">
+                     <div class="apllysmall">
+                        <i class="material-icons touch">people</i>
+                     </div>
+                     <h2>JOIN OUR TEAM</h2>
+                     <div class="divider">
+                        <img src="assets/divider.png">
+                     </div>
+                     <P1>We're always looking for candidates with passion for development to turn them into world–class consultants.</P1>
+                  </div>
+                  <div class="col-md-4"> </div>
+               </div>
+               <div class="" style="margin-left:25%;">
+                  <hr style="width:80%;">
+                  <hr style="width: 50%;margin-left:10%;">
+               </div>
+               <h2 class="main">Contact Us</h2>
+               <div class="divider">
+                  <img src="assets/divider.png">
+               </div>
+               <div class="col-md-12">
+                  <div class="col-md-6 map">
+                  </div>
+                  <div class="col-md-6 Questions">
+                     <h4 style="color: white; margin-top: 20px;">Start a Project, Questions or Advice?<br>please reach us here!</h4>
+                     <div class="col-sm-2" style="margin-left:20px;">
+                        <input type="" name="" placeholder=" Name" class="mail" style="margin-top: 10px;">
+                        <input type="" name="" placeholder=" Email" class="mail">
+                        <input type="" name="" placeholder=" Phone" class="mail">
+                        <input type="" name="" placeholder=" Company / Organisation" class="mail">
+                     </div>
+                     <div class="col-sm-2" style="margin-top:300px;">
+                        <form style="width: 400px; margin: auto; display: inline-flex; color: white;">
+                           <input type="radio" name="web" value="Website" checked> Website<br>
+                           <input type="radio" name="web" value=" Mobile / App">  Mobile / App<br>
+                           <input type="radio" name="web" value="Training"> Training<br>
+                           <input type="radio" name="web" value="other"> Other 
+                        </form>
+                     </div>
+                     <div class="col-md-2"
+                        style="margin-top:330px;margin-left:-160px;">
+                        <input type="" name="" class="about-the-project" placeholder=" About the project">
+                     </div>
+                     <div class="col-md-2" 
+                        style="margin-top: 370px;display: inline-flex;
+                        margin-left: -160px;">
+                        <div class="custom-file-upload">
+                           <input type="file" id="file" name="myfiles[]" multiple />
+                        </div>
+                     </div>
+                     <div style="margin-top: 550px;">
+                        <button class="submit">Submit</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="" style="margin-left:25%;">
+                  <hr style="width:80%;">
+                  <hr style="width: 50%;margin-left:10%;">
+               </div>
+               <div class="col-md-12">
+                  <div class="col-md-2"> </div>
+                  <div class="col-md-3">
+                     <div class="sks">
+                        <i class="material-icons location">location_on</i> 
+                     </div>
+                     <p1>
+                        SKS Township, Plot No. 4,Phase II,
+                        Ganganapalli, Kakinada,
+                        A.P , India – 533006
+                     </p1>
+                  </div>
+                  <div class="col-md-3">
+                     <div class="sks">
+                        <i class="material-icons location">email</i>
+                     </div>
+                     <p1>Email: support@nyros.com</p1>
+                  </div>
+                  <div class="col-md-3">
+                     <div class="sks"> 
+                        <i class="material-icons location">phone</i>
+                     </div>
+                     <p1>Phone: +91 9121010884</p1>
+                  </div>
+                  <div class="col-md-2"> </div>
+               </div>
+               <div class="" style="margin-left:25%;">
+                  <hr style="width:80%;">
+                  <hr style="width: 50%;margin-left:10%;">
+               </div>
+               <div class="container-fluid">
+                  <div class="cl-md-12 footer">
+                     <h4>
+                        Copyright 2016 Nyros Technologies - Crafted in Kakinada
+                     </h4>
+                  </div>
+               </div>
+            </div>
+      </div>
+      </main>
+      </div>
+      <script type="text/javascript" src="script.js"></script>
+   </body>
+</html>
